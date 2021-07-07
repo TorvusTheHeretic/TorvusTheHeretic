@@ -1,0 +1,482 @@
+            * {
+              margin: 0;
+              padding: 0;
+            }
+
+            ::selection {color: black;
+            background-color: mediumpurple;
+            }
+
+            body {
+              background-image: url("https://i.redd.it/1iwcit1gidyy.jpg");
+              background-attachment: fixed;
+              background-position: center;
+              background-size: 100em 50em;
+              background-color: #2b416e;
+              padding-top: 10vh;
+              font: lighter Source Sans Pro, arial, helvetica, sans-serif;
+              padding-left: none;
+            }
+            
+            header {
+              z-index: 2;
+              margin: 0px auto;
+              background-color: #000000;
+              height: 10vh;
+              color: #ffffff;
+              font: normal x-small verdana, arial, helvetica, sans-serif;
+              width: 100%;
+              overflow: auto;
+              border-bottom: 10px;
+              position: fixed;
+              top: 0;
+              box-shadow: 0 0 30px 0 #000000;
+              transition: 0.15s;
+            }
+
+            header:hover {
+              background-color: rgb(20, 20, 20);
+              transition: 0.15s;
+            }
+
+            #Tasseukeima {
+              margin-left: 1vh;
+              margin-top: 3vh;
+              background-color: #000000;
+              color: #63ba86;
+              font: bolder x-small verdana, arial, helvetica, sans-serif;
+              font-size: 20px;
+              width: 0vh auto;
+              padding-left: 3vh;
+              float: left;
+              cursor: default;
+              transition: 0.3s;
+              user-select: none;
+            }
+
+            #Tasseukeima:hover {
+              transition: 0.3s;
+              color: #ffffff;
+              background-color: rgba(20, 20, 20, 0);
+            }
+
+            header:hover #Tasseukeima, header.hover #Tasseukeima {
+              background-color: rgba(20, 20, 20, 0.5);
+              transition: 0.1s;
+            }
+
+            #Page_Name {
+              color: #1cc6e8;
+              font-weight: lighter;
+              transition: 0.2s;
+              padding: 1vh;
+              padding-left: 0;
+            }
+
+            #Page_Name:hover {
+              transition: 0.12s;
+              color: #ffffff;
+              background-color: inherit;
+            }
+
+            header:hover ol li a, header.hover ol li a {
+              color: #1cc6e8;
+              transition: 0.15s;
+              height: 15vh;
+            }
+
+            header:hover ol li a:hover, header.hover ol li a.hover {
+              color: #63ba86;
+              transition: 0.2s;
+              border-radius: 5px;
+            }
+
+            ul {
+              padding: 3vh;
+              width: 0vh auto;
+              margin: 0px auto;
+            }
+
+            ol {
+              padding: 3vh;
+              width: 0vh auto;
+              margin: 0px auto;
+              user-select: none;
+            }
+
+            ol li {
+              display: inline-block;
+              float: right;
+              padding: 8px;
+              transition: 0.3s;
+            }
+
+            ol li:hover {
+              transform: scale(1.12);
+              transition-duration: 0.3s;
+            }
+
+            ol li a {
+              margin: 0px auto; 
+              text-align: center;  
+              text-decoration: none;
+              font-family: sans-serif;
+              font-size: 16px;
+              margin-top: 0px;
+              font-weight: normal;
+              color: #ffffff;
+              padding: 2vh;
+              transition: 0.2s;
+              border-radius: 5px;
+            }
+
+            ol li a:hover {
+              color: #1cc6e8;
+              transition: 0.5s;
+              border-radius: 5px;
+            }
+
+            h3 {
+              font: bold small verdana, arial, helvetica, sans-serif;
+              font-size: 20px;
+              color: #fff;
+              margin-top: 5vh;
+              margin-bottom: 5vh;
+              padding: 1px;
+              text-align: center;
+              cursor: default;
+              background-color: rgba(206, 82, 222, 0.75);
+              display: inline-block;
+              border-radius: 2px;
+              user-select: none;
+            }
+
+            u {
+              text-decoration: underline;
+              font-size: 16px;
+            }
+
+            h6 {
+              font: bold small verdana, arial, helvetica, sans-serif;
+              font-size: 10px;
+              color: #ffffff;
+              background-color: rgba(23, 36, 66, 0.85);
+              text-align: center;
+              margin-top: 20px;
+              margin-left: auto;
+              margin-right: auto;
+              margin-bottom: 20px;
+              outline-width: 1px;
+              outline-color: rgb(64, 89, 148);
+              outline-style: solid;
+              padding: 2px;
+              margin-left: 65em;
+              margin-right: 65em;
+              border-radius: 3px;
+              cursor: default;
+              user-select: none;
+            }
+
+            .Top_Content {
+              margin-top: 5vh;
+              margin-bottom: 5vh;
+              margin-left: 175px;
+              margin-right: 175px;
+              justify-content: center;
+              display: flex;
+            }
+
+            .Single_Post {
+              margin-left: 175px;
+              margin-right: 175px;
+            }
+
+            #Left_Side_Bar {
+              float: left;
+              position: fixed;
+              margin: 0vh;
+              right: 1150px;
+              left: none;
+            }
+
+            #Left_Side_Bar_Total_Post {
+              margin-bottom: 75px;
+              margin-top: 2vh;
+              width: auto;
+              height: auto;
+              cursor: default;
+              border-width: 2px;
+              border-style: solid;
+              border-color: transparent;
+              border-radius: 5px;
+              position: static;
+              top: 50;
+              transition: 0.3s ease;
+              cursor: default;
+              transform: scale(1.01);
+              float: left;
+            }
+
+
+            #Left_Side_Bar_Post_Title {
+              font: normal small verdana, arial, helvetica, sans-serif;
+              color: rgb(255, 255, 255);
+              font-size: 40px; 
+              font-weight: lighter;
+              margin-bottom: 0px 5px 0px 0px;
+              background-color: rgba(23, 36, 66, 0.85);
+              padding: 12px;
+              border-radius: 0px 5px 0px 0px;
+              border-width: 1px;
+              border-color: rgb(64, 89, 148);
+              border-style: solid;
+              border-bottom: none;
+              border-left: none;
+              top: 50;
+              transition: 0.25s;
+              user-select: none;
+            }
+
+            #Left_Side_Bar_Post {
+              background-color: rgba(23, 36, 66, 0.85);
+              color: rgb(255, 255, 255);
+              font-size: 60px; 
+              font: normal small verdana, arial, helvetica, sans-serif;
+              font-weight: bold;
+              padding: 12px;
+              margin-top: 0px;
+              border-style: solid;
+              border-width: 1px; 
+              border-left-color: rgb(64, 89, 148);
+              border-right-color: rgb(64, 89, 148);
+              border-top: none;
+              border-left: none;
+              border-bottom-color: rgb(64, 89, 148);
+              border-radius: 0px 0px 5px 0px;
+              transition: 0.25s;
+              user-select: none;
+            }
+
+            .Post_Feed {
+              float: right;
+              margin: 0vh;
+            }
+
+            .Total_Post {
+              margin-bottom: 8vh;
+              margin-top: 2vh;
+              margin-right: 8vh;
+              margin-left: 8vh;
+              width: 1000px;
+              height: auto;
+              cursor: default;
+              border-width: 2px;
+              border-style: solid;
+              border-color: transparent;
+              border-radius: 5px;
+              position: static;
+              transition: 0.3s ease;
+              cursor: pointer;
+            }
+
+            .Total_Post:hover {
+              z-index: 1;
+              transition: 0.3s ease;
+              border-color: rgb(75, 191, 253);
+              border-width: 2px;
+              border-radius: 5px;
+              box-shadow: 8px 8px 15px 10px #000000;
+              transform: scale(1.005);
+            }
+
+            .Total_Post:active {
+              margin-bottom: 8vh;
+              margin-top: 2vh;
+              width: 1000px;
+              height: auto;
+              cursor: default;
+              border-width: 2px;
+              border-style: solid;
+              border-color: transparent;
+              border-radius: 5px;
+              position: static;
+              top: 50;
+              transition: 0.3s ease;
+              cursor: pointer;
+              transform: scale(0.95);
+              box-shadow: none;
+            }
+
+            .Post_Title {
+              font: normal small verdana, arial, helvetica, sans-serif;
+              color: rgb(255, 255, 255);
+              font-size: 40px; 
+              font-weight: lighter;
+              margin-bottom: 0px;
+              background-color: rgba(23, 36, 66, 0.85);
+              padding: 12px;
+              border-radius: 5px 5px 0px 0px;
+              border-width: 1px;
+              border-color: rgb(64, 89, 148);
+              border-style: solid;
+              border-bottom: none;
+              top: 50;
+              transition: 0.25s;
+              user-select: none;
+            }
+            
+            .Post_Title:hover {
+              color: rgb(75, 191, 253);
+              transition: 0.25s;
+            }
+
+            .Post_id {
+              font: normal x-small verdana, arial, helvetica, sans-serif;
+              font-size: 12px;
+              background-color: rgba(23, 36, 66, 0.85);
+              color: #ffffff;
+              padding: 6px;
+              border-radius: 15px 15px 15px 15px;
+              width: auto; 
+              float: right;
+              vertical-align: middle;
+              display: inline;
+              border-width: 1px;
+              border-color: rgb(64, 89, 148);
+              border-style: solid;
+              transition: 0.1s;
+              user-select: none;
+            }
+
+            .Post_id:hover {
+              background-color: rgb(64, 89, 148);
+              border-color: rgb(23, 36, 66);
+            }
+            
+            .Post {
+              background-color: rgba(23, 36, 66, 0.85);
+              color: rgb(255, 255, 255);
+              font-size: 60px; 
+              font: normal small verdana, arial, helvetica, sans-serif;
+              font-weight: bold;
+              padding: 12px;
+              margin-top: 0px;
+              border-style: solid;
+              border-width: 1px; 
+              border-left-color: rgb(64, 89, 148);
+              border-right-color: rgb(64, 89, 148);
+              border-top: none;
+              border-bottom-color: rgb(64, 89, 148);
+              border-radius: 0px 0px 5px 5px;
+              transition: 0.25s;
+            }
+
+            .Post:hover {
+              border-bottom-color: rgb(38, 55, 94);
+            }
+
+            .Post:hover .Post_Title.hover {
+              color: rgb(75, 191, 253);
+              transition: 0.25s;
+            }
+
+            .Post_With_Button {
+              background-color: rgba(23, 36, 66, 0.85);
+              color: rgb(255, 255, 255);
+              font-size: 60px; 
+              font: normal small verdana, arial, helvetica, sans-serif;
+              font-weight: bold;
+              padding: 12px;
+              margin-top: 0px;
+              border-style: solid;
+              border-width: 1px; 
+              border-left-color: rgb(64, 89, 148);
+              border-right-color: rgb(64, 89, 148);
+              border-top: none;
+              border-bottom-color: rgb(64, 89, 148);
+              transition: 0.25s;
+            }
+
+            .Post_With_Button:hover {
+              border-bottom-color: rgb(38, 55, 94);
+            }
+
+            .lower_title {
+              margin: 0px auto; 
+              text-align: center;  
+              padding-bottom: 8px; 
+              padding-top: 8px;
+              text-decoration: none;
+              font-family: sans-serif;
+              font-size: 14px;
+              margin-top: 0px;
+              font-weight: normal;             
+            }
+            
+            .View_Button {
+              height: 20px;
+              font-size: 50px;
+              font: normal small verdana, arial, helvetica, sans-serif;
+              color: #ffffff;
+              font-weight: bold;
+              background-color: rgb(23, 36, 66);
+              color: rgb(255, 255, 255);
+              padding: 10px;
+              cursor: default;
+              text-align: middle;
+              text-align: center;
+              padding-left: 10px;
+              padding-right: 10px;
+              border-radius: 0px 0px 5px 5px;
+              text-decoration: none;
+              cursor: pointer;
+              border-width: 1px;
+              border-style: solid;
+              border-top-color: rgb(23, 36, 66);
+              border-bottom-color: rgb(64, 89, 148);
+              border-left-color: rgb(64, 89, 148);
+              border-right-color: rgb(64, 89, 148);
+              transition: 0.25s;                      
+            }
+
+            .View_Button:hover {
+              background-color: rgb(7, 179, 232);
+              font-weight: bolder;
+              border-color: rgb(7, 179, 232);
+            }
+
+            a {
+              text-decoration: none;
+              font-color: rgb(255, 255, 255);
+            }
+
+            a:hover {
+              cursor: pointer;            
+            }
+
+            .Small_Button {
+              background-color: rgb(23, 36, 66);
+              border-width: 1px;
+              border-style: solid;
+              border-top-color: rgb(64, 89, 148);
+              border-bottom-color: rgb(64, 89, 148);
+              border-left-color: rgb(64, 89, 148);
+              border-right-color: rgb(64, 89, 148);
+              padding: 10px;
+              color: rgb(255, 255, 255);
+              text-align: center;
+              border-radius: 5px 5px 5px 5px;
+              font-size: 15px;
+              transition: 0.3s;
+              user-select: none;
+            }
+
+            .Small_Button:hover {
+              border-width: 2px solid;
+              color: rgb(7, 179, 232);;
+              background-color: rgb(23, 36, 66);
+              cursor: pointer;
+              transition: 0.3s;
+              border-color: rgb(7, 179, 232);
+              user-select: none;
+            }
