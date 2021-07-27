@@ -8,18 +8,19 @@
             }
 
             body {
-              background-image: url("https://i.redd.it/1iwcit1gidyy.jpg");
+              background-image: url("https://getwallpapers.com/wallpaper/full/0/2/5/105033.jpg");
+              background-size: cover;
+              background-repeat: no-repeat;
               background-attachment: fixed;
-              background-position: center;
-              background-size: 100em 50em;
-              background-color: #2b416e;
+              background-position: top-left;
               padding-top: 10vh;
               font: lighter Source Sans Pro, arial, helvetica, sans-serif;
               padding-left: none;
+              z-index: 1;
             }
             
             header {
-              z-index: 2;
+              z-index: 10;
               margin: 0px auto;
               background-color: #000000;
               height: 10vh;
@@ -39,7 +40,7 @@
               transition: 0.15s;
             }
 
-            #Tasseukeima {
+            #pageTitle {
               margin-left: 1vh;
               margin-top: 3vh;
               background-color: #000000;
@@ -54,18 +55,18 @@
               user-select: none;
             }
 
-            #Tasseukeima:hover {
+            #pageTitle:hover {
               transition: 0.3s;
               color: #ffffff;
               background-color: rgba(20, 20, 20, 0);
             }
 
-            header:hover #Tasseukeima, header.hover #Tasseukeima {
+            header:hover #pageTitle, header.hover #pageTitle {
               background-color: rgba(20, 20, 20, 0.5);
               transition: 0.1s;
             }
 
-            #Page_Name {
+            #pageName {
               color: #1cc6e8;
               font-weight: lighter;
               transition: 0.2s;
@@ -73,7 +74,7 @@
               padding-left: 0;
             }
 
-            #Page_Name:hover {
+            #pageName:hover {
               transition: 0.12s;
               color: #ffffff;
               background-color: inherit;
@@ -136,7 +137,27 @@
               border-radius: 5px;
             }
 
-            h3 {
+            h1 {
+              font: normal small verdana, arial, helvetica, sans-serif;
+              font-size: 20px;
+              color: #fff;
+              margin-top: 5vh;
+              margin-bottom: 5vh;
+              padding: 6px;
+              text-align: center;
+              cursor: default;
+              background-color: RGBA(28, 198, 232, 0.5);
+              display: block;
+              border-radius: 15px;
+              user-select: none;
+              justify-content: inherit;
+              margin-left: 250px;
+              margin-right: 250px;
+              z-index: 9;
+              backdrop-filter: blur(2px);
+            }
+
+            h2 {
               font: bold small verdana, arial, helvetica, sans-serif;
               font-size: 20px;
               color: #fff;
@@ -177,92 +198,64 @@
               user-select: none;
             }
 
-            .Top_Content {
-              margin-top: 5vh;
+            a {
+              text-decoration: none;
+              font-color: rgb(255, 255, 255);
+            }
+
+            a:hover {
+              cursor: pointer;            
+            }
+
+            p {
+              z-index: 4;
+              filter: blur(5px);
+            }
+
+            .topContent {
+              background-image: url("https://getwallpapers.com/wallpaper/full/0/2/5/105033.jpg");
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-position: top-left;
+              backdrop-filter: blur(2px);
               margin-bottom: 5vh;
-              margin-left: 175px;
-              margin-right: 175px;
+              margin-left: 20vh;
+              margin-right: 20vh;
+              margin-top:  5vh;
               justify-content: center;
               display: flex;
+              box-shadow: 1px 1px 15px 10px;
+              border-radius: 10px;
+              position: relative;
+              z-index: 1;
             }
 
-            .Single_Post {
+            .singlePost {
               margin-left: 175px;
               margin-right: 175px;
             }
 
-            #Left_Side_Bar {
-              float: left;
-              position: fixed;
-              margin: 0vh;
-              right: 1150px;
-              left: none;
+            .postFeed {
+              background-image: url("https://getwallpapers.com/wallpaper/full/0/2/5/105033.jpg");
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-position: top-left;
+              backdrop-filter: blur(2px);
+              margin-bottom: 5vh;
+              margin-left: 20vh;
+              margin-right: 20vh;
+              margin-top:  5vh;
+              justify-content: center;
+              display: flex;
+              box-shadow: 1px 1px 15px 10px;
+              border-radius: 10px;
+              position: relative;
+              z-index: 1;
             }
 
-            #Left_Side_Bar_Total_Post {
-              margin-bottom: 75px;
-              margin-top: 2vh;
-              width: auto;
-              height: auto;
-              cursor: default;
-              border-width: 2px;
-              border-style: solid;
-              border-color: transparent;
-              border-radius: 5px;
-              position: static;
-              top: 50;
-              transition: 0.3s ease;
-              cursor: default;
-              transform: scale(1.01);
-              float: left;
-            }
-
-
-            #Left_Side_Bar_Post_Title {
-              font: normal small verdana, arial, helvetica, sans-serif;
-              color: rgb(255, 255, 255);
-              font-size: 40px; 
-              font-weight: lighter;
-              margin-bottom: 0px 5px 0px 0px;
-              background-color: rgba(23, 36, 66, 0.85);
-              padding: 12px;
-              border-radius: 0px 5px 0px 0px;
-              border-width: 1px;
-              border-color: rgb(64, 89, 148);
-              border-style: solid;
-              border-bottom: none;
-              border-left: none;
-              top: 50;
-              transition: 0.25s;
-              user-select: none;
-            }
-
-            #Left_Side_Bar_Post {
-              background-color: rgba(23, 36, 66, 0.85);
-              color: rgb(255, 255, 255);
-              font-size: 60px; 
-              font: normal small verdana, arial, helvetica, sans-serif;
-              font-weight: bold;
-              padding: 12px;
-              margin-top: 0px;
-              border-style: solid;
-              border-width: 1px; 
-              border-left-color: rgb(64, 89, 148);
-              border-right-color: rgb(64, 89, 148);
-              border-top: none;
-              border-left: none;
-              border-bottom-color: rgb(64, 89, 148);
-              border-radius: 0px 0px 5px 0px;
-              transition: 0.25s;
-              user-select: none;
-            }
-
-            .Post_Feed {
-              float: right;
-              margin: 0vh;
-            }
-
-            .Total_Post {
+            .totalPost {
               margin-bottom: 8vh;
               margin-top: 2vh;
               margin-right: 8vh;
@@ -270,71 +263,64 @@
               width: 1000px;
               height: auto;
               cursor: default;
-              border-width: 2px;
               border-style: solid;
-              border-color: transparent;
-              border-radius: 5px;
+              border-radius: 10px;
               position: static;
               transition: 0.3s ease;
               cursor: pointer;
-            }
-
-            .Total_Post:hover {
-              z-index: 1;
-              transition: 0.3s ease;
               border-color: rgb(75, 191, 253);
-              border-width: 2px;
-              border-radius: 5px;
-              box-shadow: 8px 8px 15px 10px #000000;
-              transform: scale(1.005);
+              border-width: 1px;
+              border-radius: 10px;
+              z-index: 5;
+              backdrop-filter: blur(2px);
             }
 
-            .Total_Post:active {
-              margin-bottom: 8vh;
-              margin-top: 2vh;
-              width: 1000px;
-              height: auto;
-              cursor: default;
-              border-width: 2px;
-              border-style: solid;
-              border-color: transparent;
-              border-radius: 5px;
-              position: static;
-              top: 50;
+            .totalPost:hover {
               transition: 0.3s ease;
-              cursor: pointer;
-              transform: scale(0.95);
-              box-shadow: none;
+              border-color: rgb(255, 255, 255);
+              border-width: 1px;
+              border-radius: 10px;
+              box-shadow: 4px 4px 10px 5px #000000;
             }
 
-            .Post_Title {
+            .postTitle {
               font: normal small verdana, arial, helvetica, sans-serif;
-              color: rgb(255, 255, 255);
+              color: white;
               font-size: 40px; 
               font-weight: lighter;
               margin-bottom: 0px;
-              background-color: rgba(23, 36, 66, 0.85);
+              background-color: rgba(235, 235, 235, 0.2);
               padding: 12px;
-              border-radius: 5px 5px 0px 0px;
+              border-radius: 10px 10px 0px 0px;
               border-width: 1px;
-              border-color: rgb(64, 89, 148);
+              border-color: rgba(235, 235, 235, 0.1);
               border-style: solid;
               border-bottom: none;
               top: 50;
               transition: 0.25s;
               user-select: none;
+              z-index: 4;
+            }
+
+            .postTitleText {
+              font: normal small verdana, arial, helvetica, sans-serif;
+              color: white;
+              font-size: 40px; 
+              font-weight: lighter;
+              margin: none;
+              z-index: 7;
             }
             
-            .Post_Title:hover {
-              color: rgb(75, 191, 253);
+            .postTitle:hover {
+              color: white;
               transition: 0.25s;
             }
 
-            .Post_id {
+            .postIdentification {
               font: normal x-small verdana, arial, helvetica, sans-serif;
               font-size: 12px;
-              background-color: rgba(23, 36, 66, 0.85);
-              color: #ffffff;
+              background-color: rgba(235, 235, 235, 0.1);
+              color: rgb(75, 191, 253);
               padding: 6px;
               border-radius: 15px 15px 15px 15px;
               width: auto; 
@@ -342,19 +328,27 @@
               vertical-align: middle;
               display: inline;
               border-width: 1px;
-              border-color: rgb(64, 89, 148);
+              border-color: rgba(235, 235, 235, 0.1);
               border-style: solid;
-              transition: 0.1s;
+              transition: 0.3s;
               user-select: none;
+              z-index: 4;
             }
 
-            .Post_id:hover {
-              background-color: rgb(64, 89, 148);
-              border-color: rgb(23, 36, 66);
+            .postIdentificationText {
+              font: normal x-small verdana, arial, helvetica, sans-serif;
+              font-size: 12px;
+              color: lightgray;
+              z-index: 7;
+            }
+
+            .postIdentification:hover {
+              background-color: rgba(255, 255, 255, 0.2);
+              border-color: rgb(75, 191, 253);
             }
             
-            .Post {
-              background-color: rgba(23, 36, 66, 0.85);
+            .post {
+              background-color: rgba(235, 235, 235, 0.2);
               color: rgb(255, 255, 255);
               font-size: 60px; 
               font: normal small verdana, arial, helvetica, sans-serif;
@@ -363,25 +357,34 @@
               margin-top: 0px;
               border-style: solid;
               border-width: 1px; 
-              border-left-color: rgb(64, 89, 148);
-              border-right-color: rgb(64, 89, 148);
+              border-left-color: rgba(235, 235, 235, 0.1);
+              border-right-color: rgba(235, 235, 235, 0.1);
               border-top: none;
-              border-bottom-color: rgb(64, 89, 148);
-              border-radius: 0px 0px 5px 5px;
+              border-bottom-color: rgba(235, 235, 235, 0.1);
+              border-radius: 0px 0px 10px 10px;
+              transition: 0.25s;
+              z-index: 4;
+            }
+
+            .postText {
+              color: rgb(255, 255, 255);
+              font-size: 60px; 
+              font: normal small verdana, arial, helvetica, sans-serif;
+              font-weight: bold;
+              z-index: 7;
+            }
+
+            .post:hover {
+              border-bottom-color: rgba(235, 235, 235, 0.1);
+            }
+
+            .totalPost:hover .postTitle.hover {
+              color: lightgray;
               transition: 0.25s;
             }
 
-            .Post:hover {
-              border-bottom-color: rgb(38, 55, 94);
-            }
-
-            .Post:hover .Post_Title.hover {
-              color: rgb(75, 191, 253);
-              transition: 0.25s;
-            }
-
-            .Post_With_Button {
-              background-color: rgba(23, 36, 66, 0.85);
+            .postWithButton {
+              background-color: rgba(235, 235, 235, 0.2);
               color: rgb(255, 255, 255);
               font-size: 60px; 
               font: normal small verdana, arial, helvetica, sans-serif;
@@ -390,36 +393,25 @@
               margin-top: 0px;
               border-style: solid;
               border-width: 1px; 
-              border-left-color: rgb(64, 89, 148);
-              border-right-color: rgb(64, 89, 148);
+              border-left-color: rgba(235, 235, 235, 0.1);
+              border-right-color: rgba(235, 235, 235, 0.1);
               border-top: none;
-              border-bottom-color: rgb(64, 89, 148);
+              border-bottom-color: rgba(235, 235, 235, 0.1);
               transition: 0.25s;
+              z-index: 4;
             }
 
-            .Post_With_Button:hover {
-              border-bottom-color: rgb(38, 55, 94);
-            }
-
-            .lower_title {
-              margin: 0px auto; 
-              text-align: center;  
-              padding-bottom: 8px; 
-              padding-top: 8px;
-              text-decoration: none;
-              font-family: sans-serif;
-              font-size: 14px;
-              margin-top: 0px;
-              font-weight: normal;             
+            .postWithButton:hover {
+              border-bottom-color: rgba(235, 235, 235, 0.2);
             }
             
-            .View_Button {
+            .viewButton {
               height: 20px;
               font-size: 50px;
               font: normal small verdana, arial, helvetica, sans-serif;
               color: #ffffff;
               font-weight: bold;
-              background-color: rgb(23, 36, 66);
+              background-color: rgba(235, 235, 235, 0.2);
               color: rgb(255, 255, 255);
               padding: 10px;
               cursor: default;
@@ -439,23 +431,14 @@
               transition: 0.25s;                      
             }
 
-            .View_Button:hover {
-              background-color: rgb(7, 179, 232);
+            .viewButton:hover {
+              background-color: rgba(235, 235, 235, 0.2);
               font-weight: bolder;
               border-color: rgb(7, 179, 232);
             }
 
-            a {
-              text-decoration: none;
-              font-color: rgb(255, 255, 255);
-            }
-
-            a:hover {
-              cursor: pointer;            
-            }
-
             .Small_Button {
-              background-color: rgb(23, 36, 66);
+              background-color: rgba(235, 235, 235, 0.2);
               border-width: 1px;
               border-style: solid;
               border-top-color: rgb(64, 89, 148);
@@ -474,9 +457,8 @@
             .Small_Button:hover {
               border-width: 2px solid;
               color: rgb(7, 179, 232);;
-              background-color: rgb(23, 36, 66);
+              background-color: rgba(235, 235, 235, 0.2);
               cursor: pointer;
               transition: 0.3s;
               border-color: rgb(7, 179, 232);
               user-select: none;
-            }
