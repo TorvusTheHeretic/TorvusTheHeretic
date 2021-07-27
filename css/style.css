@@ -289,7 +289,7 @@
               font-size: 40px; 
               font-weight: lighter;
               margin-bottom: 0px;
-              background-color: rgba(235, 235, 235, 0.2);
+              background-color: rgba(235, 235, 235, 0.4);
               padding: 12px;
               border-radius: 10px 10px 0px 0px;
               border-width: 1px;
@@ -319,7 +319,7 @@
             .postIdentification {
               font: normal x-small verdana, arial, helvetica, sans-serif;
               font-size: 12px;
-              background-color: rgba(235, 235, 235, 0.1);
+              background-color: rgba(235, 235, 235, 0.4);
               color: rgb(75, 191, 253);
               padding: 6px;
               border-radius: 15px 15px 15px 15px;
@@ -348,7 +348,7 @@
             }
             
             .post {
-              background-color: rgba(235, 235, 235, 0.2);
+              background-color: rgba(235, 235, 235, 0.4);
               color: rgb(255, 255, 255);
               font-size: 60px; 
               font: normal small verdana, arial, helvetica, sans-serif;
@@ -384,7 +384,7 @@
             }
 
             .postWithButton {
-              background-color: rgba(235, 235, 235, 0.2);
+              background-color: rgba(235, 235, 235, 0.4);
               color: rgb(255, 255, 255);
               font-size: 60px; 
               font: normal small verdana, arial, helvetica, sans-serif;
@@ -411,7 +411,7 @@
               font: normal small verdana, arial, helvetica, sans-serif;
               color: #ffffff;
               font-weight: bold;
-              background-color: rgba(235, 235, 235, 0.2);
+              background-color: rgba(235, 235, 235, 0.4);
               color: rgb(255, 255, 255);
               padding: 10px;
               cursor: default;
@@ -438,7 +438,7 @@
             }
 
             .Small_Button {
-              background-color: rgba(235, 235, 235, 0.2);
+              background-color: rgba(235, 235, 235, 0.4);
               border-width: 1px;
               border-style: solid;
               border-top-color: rgb(64, 89, 148);
@@ -457,7 +457,7 @@
             .Small_Button:hover {
               border-width: 2px solid;
               color: rgb(7, 179, 232);;
-              background-color: rgba(235, 235, 235, 0.2);
+              background-color: rgba(235, 235, 235, 0.4);
               cursor: pointer;
               transition: 0.3s;
               border-color: rgb(7, 179, 232);
