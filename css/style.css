@@ -229,7 +229,6 @@
               border-radius: 10px;
               position: relative;
               z-index: 1;
-              backdrop-filter: blur(2px);
             }
 
             .singlePost {
@@ -254,7 +253,6 @@
               border-radius: 10px;
               position: relative;
               z-index: 1;
-              backdrop-filter: blur(2px);
             }
 
             .totalPost {
