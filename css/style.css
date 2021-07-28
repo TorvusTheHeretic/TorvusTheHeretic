@@ -340,7 +340,7 @@
             .postIdentificationText {
               font: normal x-small verdana, arial, helvetica, sans-serif;
               font-size: 12px;
-              color: lightgray;
+              color: white;
               z-index: 7;
             }
 
