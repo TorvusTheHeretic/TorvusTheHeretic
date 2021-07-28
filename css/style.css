@@ -223,6 +223,7 @@
               margin-left: 20vh;
               margin-right: 20vh;
               margin-top:  5vh;
+              padding-top: 6vh;
               justify-content: center;
               display: flex;
               box-shadow: 1px 1px 15px 10px;
@@ -243,6 +244,7 @@
               background-attachment: fixed;
               background-position: top-left;
               backdrop-filter: blur(2px);
+              padding-top: 6vh;
               margin-bottom: 5vh;
               margin-left: 20vh;
               margin-right: 20vh;
